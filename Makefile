@@ -13,7 +13,7 @@ install:
 check:
 	for exec in $(EXECUTABLES); do which $$exec > /dev/null 2>/dev/null && printf $(ROW) "$$exec" "Found" || printf $(ROW) "$$exec" "Not found"; done
 
-clear:
+clean:
 	rm -rf $(WAYBAR_INSTALL_DIR)
 
 
