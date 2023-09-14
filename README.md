@@ -6,9 +6,7 @@ This repo contains my current config for waybar which is as simple as beautiful 
 
 ### Installation
 
-This config contains some variables which must be substituted with help of Makefile and `make.conf`.
-
-By default it's configured for sway and alacritty as terminal emulator, but you can simply change this in the config file by changing variable values.
+By default it's configured for sway and alacritty as terminal emulator, but you can simply change this in the `config.jsonc` file.
 
 ```sh
     make
