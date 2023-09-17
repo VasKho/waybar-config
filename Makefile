@@ -1,5 +1,5 @@
 MAKEFILE_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-WAYBAR_CONFIG_SRC = config.jsonc style.css
+WAYBAR_CONFIG_SRC = config.jsonc style.css theme.css
 WAYBAR_INSTALL_DIR := $(HOME)/.config/waybar
 EXECUTABLES := swaymsg brightnessctl playerctl pulsemixer waybar cliphist
 ROW := "%-15s|%-20s\n"

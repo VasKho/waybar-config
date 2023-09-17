@@ -1,11 +1,13 @@
+@import "theme.css";
+
 @keyframes blink-warning {
-    from { background-color: @insensitive_base_color; }
-    to { background-color: @BANANA_900; }
+    from { background-color: @waybar_background; }
+    to { background-color: @warning_color; }
 }
 
 @keyframes blink-critical {
-    from { background-color: @insensitive_base_color; }
-    to { background-color: @STRAWBERRY_900; }
+    from { background-color: @waybar_background; }
+    to { background-color: @error_color; }
 }
 
 
@@ -25,9 +27,9 @@
 
 /* The whole bar */
 #waybar {
-    background: @insensitive_base_color;
-    border-radius: 0;
-    color: @theme_fg_color;
+    background: @waybar_background;
+    border-radius: 8px;
+    color: @text_color;
     font-size: 14px;
 }
 
@@ -37,7 +39,7 @@
  * -------------------------------------------------------------------------- */
 
 #custom-menu {
-    color: @GRAPE_500;
+    color: @menu_color;
     min-width: 26px;
     font-size: 26px;
     border-radius: 10px;
@@ -50,35 +52,23 @@
     padding-top: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    color: @theme_fg_color;
+    color: @text_color;
 }
 
 #workspaces button.focused {
-    border-color: @theme_fg_color;
-    color: @theme_fg_color;
-    background-color: @ORANGE_900;
+    border-color: @text_color;
+    color: @text_color;
+    background-color: @current_workspace_bg;
 }
 
 #workspaces button.urgent {
-    border-color: @STRAWBERRY_100;
-    color: @STRAWBERRY_700;
-}
-
-#custom-scratchpad {
-    border-bottom: 2px solid transparent;
-    padding-top: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: @theme_fg_color;
+    border-color: @urgent_workspace_border_color;
+    color: @urgent_workspace_text_color;
 }
 
 #custom-wf-recorder {
-    color: @theme_fg_color;
+    color: @text_color;
     padding-right: 10px;
-}
-
-#mode {
-    background: @insensitive_base_color;
 }
 
 #language {
@@ -153,20 +143,10 @@
 }
 
 #network.disconnected {
-    color: @error_color;
+    color: @mute_disable_color;
     padding-left: 5px;
     padding-right: 10px;
     min-width: 25px;
-}
-
-#bluetooth {
-    padding-left: 5px;
-    padding-right: 5px;
-    min-width: 25px;
-}
-
-#bluetooth.disabled {
-    color: @error_color;
 }
 
 #custom-playerctl {
@@ -182,9 +162,9 @@
 }
 
 #pulseaudio.muted {
-    color: @error_color;
+    color: @mute_disable_color;
     padding-left: 5px;
-    padding-right: 0px;
+    padding-right: 3px;
 }
 
 #backlight {

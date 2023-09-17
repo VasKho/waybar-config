@@ -1,0 +1,9 @@
+@define-color waybar_background #32302f;
+@define-color warning_color #a27100;
+@define-color error_color #ac1800;
+@define-color text_color #f9f5d7;
+@define-color menu_color #9c27B0;
+@define-color current_workspace_bg #c26c00;
+@define-color mute_disable_color #f28b82;
+@define-color urgent_workspace_border_color #ff9262;
+@define-color urgent_workspace_text_color #cf3b00;
