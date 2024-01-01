@@ -1,4 +1,5 @@
 @define-color waybar_background #32302f;
+@define-color hover_bg #33302f;
 @define-color warning_color #a27100;
 @define-color error_color #ac1800;
 @define-color text_color #f9f5d7;
