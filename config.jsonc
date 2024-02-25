@@ -74,7 +74,7 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "swaymsg exec '$term --class \"btop\" -e btop -p 0'"
+        "on-click": "swaymsg exec '$term -a \"btop\" -e btop -p 0'"
     },
 
     "memory": {
@@ -84,7 +84,7 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "swaymsg exec '$term --class \"btop\" -e btop -p 0'"
+        "on-click": "swaymsg exec '$term -a \"btop\" -e btop -p 0'"
     },
 
     "battery": {
@@ -106,7 +106,7 @@
         "format-ethernet": "󰈀",
         "format-disconnected": "󰤮",
         "tooltip-format": "{ifname} ({essid}): {ipaddr}",
-        "on-click": "swaymsg exec '$term --class \"nmtui\" -e nmtui'"
+        "on-click": "swaymsg exec '$term -a \"nmtui\" -e nmtui'"
     },
 
     "backlight": {
@@ -142,7 +142,7 @@
             "default": ["", "", ""]
         },
         "tooltip-format": "{icon} {volume}% {format_source}",
-        "on-click": "swaymsg exec '$term --class \"pulsemixer\" -e pulsemixer'"
+        "on-click": "swaymsg exec '$term -a \"pulsemixer\" -e pulsemixer'"
     },
 
     "tray": {
